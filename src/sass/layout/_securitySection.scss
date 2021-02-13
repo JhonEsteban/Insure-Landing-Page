@@ -55,12 +55,12 @@
       content: '';
       display: block;
       position: absolute;
-      width: 175px;
-      height: 250px;
+      width: 200px;
+      height: 260px;
       background-image: url(../../assets/images/bg-pattern-intro-right-mobile.svg);
-      @include backgroundProps(contain);
-      transform: translate(45px, -50px);
+      @include backgroundProps(right, contain);
       right: 0;
+      top: 309px;
     }
   }
 }

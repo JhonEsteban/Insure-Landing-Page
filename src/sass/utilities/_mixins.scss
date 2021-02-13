@@ -1,4 +1,5 @@
 @import './variables';
+@import '../base/typo';
 
 @mixin flexbox($justifyContent: center, $alignItems: center) {
   display: flex;
@@ -7,17 +8,18 @@
 }
 
 @mixin button {
-  padding: 10px 20px;
+  padding: 8px 28px;
   border: none;
   cursor: pointer;
   background-color: transparent;
   text-transform: uppercase;
   color: $Very-Light-Gray;
-  border: 2px solid $Very-Light-Gray;
+  border: 1px solid $Very-Light-Gray;
+  font-family: KarlaRegular;
 }
 
-@mixin backgroundProps($backgroundSize: cover) {
-  background-position: center;
-  background-repeat: no-repeat;
+@mixin backgroundProps($backgroundPosition: center, $backgroundSize: cover) {
+  background-position: $backgroundPosition;
   background-size: $backgroundSize;
+  background-repeat: no-repeat;
 }
