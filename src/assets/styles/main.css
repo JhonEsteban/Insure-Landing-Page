@@ -5,10 +5,16 @@
   src: url(../../assets/fonts/Karla-Regular.ttf);
 }
 @font-face {
-  font-family: "KarlaRegular";
+  font-family: "KarlaBold";
+  font-style: normal;
+  font-weight: bold;
+  src: url(../../assets/fonts/Karla-Bold.ttf);
+}
+@font-face {
+  font-family: "DMSerifDisplay";
   font-style: normal;
   font-weight: 400;
-  src: url(../../assets/fonts/Karla-Regular.ttf);
+  src: url(../../assets/fonts/DMSerifDisplay-Regular.ttf);
 }
 *,
 *::before,
@@ -35,12 +41,6 @@ body {
   display: none;
 }
 
-@font-face {
-  font-family: "KarlaRegular";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../../assets/fonts/Karla-Regular.ttf);
-}
 .header {
   height: 50px;
   padding: 30px;
@@ -62,18 +62,6 @@ body {
   border: 1px solid #2b272f;
 }
 
-@font-face {
-  font-family: "KarlaRegular";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../../assets/fonts/Karla-Regular.ttf);
-}
-@font-face {
-  font-family: "DMSerifDisplay";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../../assets/fonts/DMSerifDisplay-Regular.ttf);
-}
 .security {
   margin-bottom: 200px;
 }
@@ -135,12 +123,6 @@ body {
   top: 309px;
 }
 
-@font-face {
-  font-family: "DMSerifDisplay";
-  font-style: normal;
-  font-weight: 400;
-  src: url(./assets/fonts/DMSerifDisplay-Regular.ttf);
-}
 .different {
   margin-top: -65px;
   text-align: center;
