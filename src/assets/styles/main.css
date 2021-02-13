@@ -1,1 +1,61 @@
+@font-face {
+  font-family: "KarlaBold";
+  font-style: normal;
+  font-weight: bold;
+  src: url(../../assets/fonts/Karla-Bold.ttf);
+}
+@font-face {
+  font-family: "KarlaRegular";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../assets/fonts/Karla-Regular.ttf);
+}
+@font-face {
+  font-family: "DMSerifDisplay";
+  font-style: normal;
+  font-weight: 400;
+  src: url(./assets/fonts/DMSerifDisplay-Regular.ttf);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: KarlaRegular;
+  margin: 0;
+}
+
+.header {
+  height: 50px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 4px #837d87;
+}
+.header__logo {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.header__icon {
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid #2b272f;
+}
+
 /*# sourceMappingURL=main.css.map */
