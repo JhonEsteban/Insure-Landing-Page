@@ -1,20 +1,8 @@
 @font-face {
-  font-family: "KarlaBold";
-  font-style: normal;
-  font-weight: bold;
-  src: url(../../assets/fonts/Karla-Bold.ttf);
-}
-@font-face {
   font-family: "KarlaRegular";
   font-style: normal;
   font-weight: 400;
   src: url(../../assets/fonts/Karla-Regular.ttf);
-}
-@font-face {
-  font-family: "DMSerifDisplay";
-  font-style: normal;
-  font-weight: 400;
-  src: url(./assets/fonts/DMSerifDisplay-Regular.ttf);
 }
 *,
 *::before,
@@ -56,6 +44,72 @@ body {
   padding: 5px;
   cursor: pointer;
   border: 1px solid #2b272f;
+}
+
+@font-face {
+  font-family: "DMSerifDisplay";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../assets/fonts/DMSerifDisplay-Regular.ttf);
+}
+.security {
+  margin-bottom: 200px;
+}
+.security .figure {
+  margin: 0;
+}
+.security__card {
+  height: 430px;
+  background-color: #2d2640;
+  color: #fafafa;
+  text-align: center;
+  position: relative;
+}
+.security__card h1 {
+  font-family: DMSerifDisplay;
+  margin: 0;
+  padding: 70px 10px 0 10px;
+  font-size: 4.2rem;
+  font-weight: 400;
+  line-height: 40px;
+}
+.security__card p {
+  font-size: 1.5rem;
+  padding: 10px 16px;
+  line-height: 25px;
+}
+.security__card .button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #fafafa;
+  border: 2px solid #fafafa;
+}
+.security__card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 125px;
+  background-image: url(../../assets/images/bg-pattern-intro-left-mobile.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.security__card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 175px;
+  height: 250px;
+  background-image: url(../../assets/images/bg-pattern-intro-right-mobile.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate(45px, -50px);
+  right: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
