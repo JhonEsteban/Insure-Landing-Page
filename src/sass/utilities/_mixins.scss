@@ -4,14 +4,14 @@
   justify-content: $justifyContent;
 }
 
-@mixin button {
-  padding: 8px 28px;
+@mixin button($borderSize: 1px, $paddingSize: 8px 28px) {
+  padding: $paddingSize;
   border: none;
   cursor: pointer;
   background-color: transparent;
   text-transform: uppercase;
   color: $Very-Light-Gray;
-  border: 1px solid $Very-Light-Gray;
+  border: $borderSize solid $Very-Light-Gray;
   font-family: KarlaRegular;
 }
 

@@ -177,4 +177,49 @@ body {
   padding: 0 10px;
 }
 
+.work {
+  margin: 70px 0 20px;
+  height: 330px;
+  text-align: center;
+  background-color: #2d2640;
+  padding: 50px 0;
+  color: #fafafa;
+  position: relative;
+}
+.work::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-image: url(../../assets/images/bg-pattern-how-we-work-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  top: 0;
+  right: 0;
+}
+.work h3 {
+  font-size: 3.77rem;
+  font-weight: 400;
+  font-family: DMSerifDisplay, Arial, Helvetica;
+  letter-spacing: 2px;
+  line-height: 40px;
+  padding: 0 30px;
+  margin: 18px 0 35px;
+}
+.work .button {
+  padding: 12px 28px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #fafafa;
+  border: 2px solid #fafafa;
+  font-family: KarlaRegular;
+  font-family: KarlaBold, Arial, Helvetica;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,40 @@
+.work {
+  margin: 70px 0 20px;
+  height: 330px;
+  text-align: center;
+  background-color: #2d2640;
+  padding: 50px 0;
+  color: #fafafa;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-image: url(../../assets/images/bg-pattern-how-we-work-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    top: 0;
+    right: 0;
+  }
+
+  h3 {
+    font-size: 3.77rem;
+    font-weight: 400;
+    font-family: $DMSerif-Display;
+    letter-spacing: 2px;
+    line-height: 40px;
+    padding: 0 30px;
+    margin: 18px 0 35px;
+  }
+
+  .button {
+    @include button(2px, 12px 28px);
+    font-family: $Karla-bold;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+  }
+}
