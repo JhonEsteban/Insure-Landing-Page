@@ -90,6 +90,7 @@ body {
   margin: auto;
   left: 0;
   right: 0;
+  bottom: -20px;
 }
 .header .main-nav.show {
   display: block;
@@ -108,7 +109,6 @@ body {
   text-align: center;
   padding: 10px 20px;
   border: 1px solid #fafafa;
-  margin-bottom: 40px;
 }
 .header .main-menu__link {
   text-transform: uppercase;
@@ -278,13 +278,13 @@ body {
 }
 
 .footer {
-  padding: 20px 0;
   background-color: #fafafa;
   text-align: center;
   font-family: KarlaRegular, Arial, Helvetica;
   font-weight: 400;
   margin-top: 140px;
   position: relative;
+  overflow: hidden;
 }
 .footer::before {
   content: "";
@@ -294,7 +294,11 @@ body {
   height: 200px;
   background-image: url(../../assets/images/bg-pattern-footer-mobile.svg);
   background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
   top: 0;
+  left: 0;
+  right: 0;
 }
 .footer__social {
   text-align: center;
@@ -320,10 +324,12 @@ body {
 .footer__networks {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 3rem;
+  margin-bottom: 35px;
 }
 .footer__networks li {
-  margin-right: 20px;
+  margin-right: 15px;
 }
 .footer__networks li a {
   color: #837d87;
@@ -331,12 +337,13 @@ body {
 .footer__data {
   display: grid;
   text-transform: uppercase;
+  margin-top: -10px;
 }
 .footer__data h5 {
   color: #837d87;
 }
 .footer__articles h5 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .footer__articles li {
   padding-bottom: 13px;
@@ -345,7 +352,14 @@ body {
   color: #2d2640;
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+}
+.footer__logo {
+  margin: 0;
+  margin-top: 65px;
+}
+.footer__image {
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */

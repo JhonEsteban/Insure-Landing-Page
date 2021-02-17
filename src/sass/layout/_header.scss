@@ -37,6 +37,7 @@
       margin: auto;
       left: 0;
       right: 0;
+      bottom: -20px;
     }
   }
 
@@ -59,7 +60,6 @@
       text-align: center;
       padding: 10px 20px;
       border: 1px solid $Very-Light-Gray;
-      margin-bottom: 40px;
     }
 
     &__link {
