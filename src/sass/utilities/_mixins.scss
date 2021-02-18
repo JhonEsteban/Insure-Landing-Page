@@ -20,3 +20,9 @@
   background-size: $backgroundSize;
   background-repeat: no-repeat;
 }
+
+@mixin mediaQuerie($breakPoint) {
+  @media screen and (min-width: $breakPoint) {
+    @content;
+  }
+}
