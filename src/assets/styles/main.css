@@ -172,10 +172,35 @@ body {
 }
 
 .security {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
-.security .figure {
-  margin: 0;
+@media screen and (min-width: 540px) {
+  .security {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .security {
+    width: 100%;
+    background-color: #2d2640;
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (min-width: 540px) {
+  .security__image {
+    margin: 0 auto;
+    position: relative;
+    z-index: 20;
+    top: -400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .security__image {
+    top: 70px;
+    left: -250px;
+  }
 }
 .security__card {
   height: 430px;
@@ -183,6 +208,21 @@ body {
   color: #fafafa;
   text-align: center;
   position: relative;
+  z-index: 10;
+}
+@media screen and (min-width: 540px) {
+  .security__card {
+    height: 730px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .security__card {
+    width: 100%;
+    height: initial;
+    padding-left: 160px;
+    padding-top: 50px;
+    text-align: initial;
+  }
 }
 .security__card h1 {
   font-family: DMSerifDisplay;
@@ -192,10 +232,30 @@ body {
   font-weight: 400;
   line-height: 40px;
 }
+@media screen and (min-width: 1200px) {
+  .security__card h1 {
+    text-align: left;
+    font-size: 5rem;
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .security__card h1 span {
+    display: block;
+  }
+}
 .security__card p {
   font-size: 1.5rem;
   padding: 10px 16px;
   line-height: 25px;
+}
+@media screen and (min-width: 1200px) {
+  .security__card p {
+    text-align: left;
+    width: 65%;
+    padding-top: 30px;
+    padding-left: 0;
+  }
 }
 .security__card .button {
   padding: 8px 28px;
@@ -207,6 +267,11 @@ body {
   border: 1px solid #fafafa;
   font-family: KarlaRegular;
 }
+@media screen and (min-width: 1200px) {
+  .security__card .button {
+    text-align: initial;
+  }
+}
 .security__card::before {
   content: "";
   display: block;
@@ -217,6 +282,11 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 1200px) {
+  .security__card::before {
+    display: none;
+  }
 }
 .security__card::after {
   content: "";
@@ -231,12 +301,26 @@ body {
   right: 0;
   top: 309px;
 }
+@media screen and (min-width: 540px) {
+  .security__card::after {
+    display: none;
+  }
+}
 
 .different {
-  margin-top: -65px;
   text-align: center;
   position: relative;
   color: #2b272f;
+}
+@media screen and (min-width: 540px) {
+  .different {
+    margin-top: -320px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .different {
+    margin-top: 200px;
+  }
 }
 .different h2 {
   margin-bottom: 40px;

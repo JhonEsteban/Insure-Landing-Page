@@ -48,17 +48,22 @@
 
     <main>
       <section class="security">
-        <figure class="figure">
+        <picture>
+          <source
+            media="(min-width: 375px)"
+            srcset="./assets/images/image-intro-desktop.jpg"
+            class="security__image"
+          />
           <img
             src="./assets/images/image-intro-mobile.jpg"
-            class="figure__image"
+            class="security__image"
             alt="Picture of a family"
             title="Picture of a family"
           />
-        </figure>
+        </picture>
 
         <article class="security__card">
-          <h1>Humanizing your insurance.</h1>
+          <h1>Humanizing <span>your insurance.</span></h1>
           <p>
             Get your insurance covergae easier and faster. Web bland our
             expertise and technology to help you find the plan that's right for

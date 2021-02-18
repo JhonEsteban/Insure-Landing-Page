@@ -1,8 +1,15 @@
 .different {
-  margin-top: -65px;
   text-align: center;
   position: relative;
   color: $Very-Dark-Violet;
+
+  @include mediaQuerie(540px) {
+    margin-top: -320px;
+  }
+
+  @include mediaQuerie(1200px) {
+    margin-top: 200px;
+  }
 
   h2 {
     margin-bottom: 40px;
