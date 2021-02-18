@@ -7,7 +7,7 @@
     margin-top: -320px;
   }
 
-  @include mediaQuerie(1200px) {
+  @include mediaQuerie(1220px) {
     margin-top: 200px;
   }
 
@@ -16,6 +16,11 @@
     font-family: DMSerifDisplay;
     font-weight: 400;
     font-size: 3.8rem;
+
+    @include mediaQuerie(1220px) {
+      text-align: left;
+      padding-left: 120px;
+    }
 
     &::before {
       content: '';
@@ -28,25 +33,49 @@
       margin: auto;
       left: 0;
       right: 0;
+
+      @include mediaQuerie(1220px) {
+        left: initial;
+        right: initial;
+      }
     }
   }
 
   &__layout {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 16px;
 
-    .wrapper {
-      padding: 0px 16px;
+    @include mediaQuerie(1220px) {
+      padding: 0;
+      width: 85%;
+      margin: auto;
     }
   }
 
   &__card {
     text-align: center;
     margin-bottom: 50px;
+    max-width: 340px;
+    margin: auto;
+
+    @include mediaQuerie(730px) {
+      margin: 10px auto;
+      padding: 0;
+    }
 
     .figure {
+      @include mediaQuerie(1220px) {
+        margin-left: 0;
+      }
+
       &__image {
         width: 70px;
         margin: 0 auto;
+
+        @include mediaQuerie(1220px) {
+          margin: 0;
+        }
       }
     }
 
@@ -55,6 +84,10 @@
       font-family: DMSerifDisplay;
       font-size: 2.2rem;
       font-weight: 400;
+
+      @include mediaQuerie(1220px) {
+        text-align: left;
+      }
     }
 
     p {
@@ -62,12 +95,21 @@
       font-size: 1.4rem;
       letter-spacing: 0.1px;
       line-height: 22px;
+
+      @include mediaQuerie(1220px) {
+        text-align: left;
+        width: 310px;
+      }
     }
   }
 
   &__card:last-child {
     p {
       padding: 0 10px;
+
+      @include mediaQuerie(1220px) {
+        padding: 0;
+      }
     }
   }
 }
