@@ -431,6 +431,22 @@ body {
   color: #fafafa;
   position: relative;
 }
+@media screen and (min-width: 1052px) {
+  .work {
+    width: 98%;
+    height: auto;
+    margin: 70px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .work {
+    width: 80%;
+  }
+}
 .work::before {
   content: "";
   display: block;
@@ -444,14 +460,30 @@ body {
   top: 0;
   right: 0;
 }
+@media screen and (min-width: 1052px) {
+  .work::before {
+    height: 235px;
+    background-image: url(../../assets/images/bg-pattern-how-we-work-desktop.svg);
+  }
+}
 .work h3 {
   font-size: 3.77rem;
   font-weight: 400;
   font-family: DMSerifDisplay, Arial, Helvetica;
   letter-spacing: 2px;
   line-height: 40px;
-  padding: 0 30px;
+  padding: 0 60px;
   margin: 18px 0 35px;
+}
+@media screen and (min-width: 1052px) {
+  .work h3 {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1052px) {
+  .work h3 span {
+    display: block;
+  }
 }
 .work .button {
   padding: 12px 28px;
@@ -465,6 +497,11 @@ body {
   font-family: KarlaBold, Arial, Helvetica;
   letter-spacing: 1px;
   font-size: 1.3rem;
+}
+@media screen and (min-width: 1052px) {
+  .work .button {
+    margin-right: 60px;
+  }
 }
 
 .footer {
