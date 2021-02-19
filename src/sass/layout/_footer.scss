@@ -37,7 +37,7 @@
     position: relative;
     padding-bottom: 30px;
 
-    @include mediaQuerie(720px) {
+    @include mediaQuerie(590px) {
       width: 80%;
       margin: auto;
       display: flex;
@@ -57,7 +57,7 @@
       left: 0;
       right: 0;
 
-      @include mediaQuerie(720px) {
+      @include mediaQuerie(590px) {
         display: none;
       }
     }
@@ -90,15 +90,20 @@
     text-transform: uppercase;
     margin-top: -10px;
 
+    @include mediaQuerie(590px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
     @include mediaQuerie(720px) {
       width: 80%;
-      display: flex;
       margin: 0 auto;
       justify-content: space-between;
     }
 
     &::before {
-      @include mediaQuerie(720px) {
+      @include mediaQuerie(590px) {
         content: '';
         display: block;
         position: absolute;
@@ -145,7 +150,7 @@
     margin: 0;
     margin-top: 65px;
 
-    @include mediaQuerie(720px) {
+    @include mediaQuerie(590px) {
       margin-top: 0;
     }
   }

@@ -59,6 +59,7 @@
         text-align: left;
         font-size: 5rem;
         padding-left: 0;
+        margin-left: -21px;
       }
 
       span {
@@ -78,6 +79,7 @@
         width: 65%;
         padding-top: 30px;
         padding-left: 0;
+        margin-left: -21px;
       }
     }
 
@@ -86,6 +88,7 @@
 
       @include mediaQuerie(1200px) {
         text-align: initial;
+        margin-left: -21px;
       }
     }
 

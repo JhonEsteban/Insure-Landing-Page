@@ -4,8 +4,20 @@
   @include flexbox(space-between);
   box-shadow: 0 0 4px $Dark-Grayish-Violet;
 
-  @include mediaQuerie(940px) {
-    padding: 30px 70px;
+  @include mediaQuerie(820px) {
+    width: 90%;
+    margin: auto;
+    box-shadow: initial;
+  }
+
+  @include mediaQuerie(1020px) {
+    width: 88.5%;
+  }
+
+  &__logo {
+    @include mediaQuerie(1020px) {
+      margin-left: 30px;
+    }
   }
 
   &__icon {
@@ -37,7 +49,8 @@
       background-color: transparent;
       width: 60%;
     }
-    @include mediaQuerie(940px) {
+    @include mediaQuerie(920px) {
+      width: 48%;
     }
 
     &::after {
@@ -95,7 +108,7 @@
         padding: 0;
       }
 
-      @include mediaQuerie(940px) {
+      @include mediaQuerie(720px) {
         padding: 6px 20px;
         border: 1px solid $Dark-Violet;
       }

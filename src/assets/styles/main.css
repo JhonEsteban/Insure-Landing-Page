@@ -61,9 +61,21 @@ body {
   justify-content: space-between;
   box-shadow: 0 0 4px #837d87;
 }
-@media screen and (min-width: 940px) {
+@media screen and (min-width: 820px) {
   .header {
-    padding: 30px 70px;
+    width: 90%;
+    margin: auto;
+    box-shadow: initial;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .header {
+    width: 88.5%;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .header__logo {
+    margin-left: 30px;
   }
 }
 .header__icon {
@@ -95,6 +107,11 @@ body {
     height: initial;
     background-color: transparent;
     width: 60%;
+  }
+}
+@media screen and (min-width: 920px) {
+  .header .main-nav {
+    width: 48%;
   }
 }
 .header .main-nav::after {
@@ -152,7 +169,7 @@ body {
     padding: 0;
   }
 }
-@media screen and (min-width: 940px) {
+@media screen and (min-width: 720px) {
   .header .main-menu__item:last-child {
     padding: 6px 20px;
     border: 1px solid #2d2640;
@@ -237,6 +254,7 @@ body {
     text-align: left;
     font-size: 5rem;
     padding-left: 0;
+    margin-left: -21px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -255,6 +273,7 @@ body {
     width: 65%;
     padding-top: 30px;
     padding-left: 0;
+    margin-left: -21px;
   }
 }
 .security__card .button {
@@ -270,6 +289,7 @@ body {
 @media screen and (min-width: 1200px) {
   .security__card .button {
     text-align: initial;
+    margin-left: -21px;
   }
 }
 .security__card::before {
@@ -331,7 +351,7 @@ body {
 @media screen and (min-width: 1220px) {
   .different h2 {
     text-align: left;
-    padding-left: 120px;
+    padding-left: 137px;
   }
 }
 .different h2::before {
@@ -544,7 +564,7 @@ body {
   position: relative;
   padding-bottom: 30px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 590px) {
   .footer__social {
     width: 80%;
     margin: auto;
@@ -565,7 +585,7 @@ body {
   left: 0;
   right: 0;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 590px) {
   .footer__social::after {
     display: none;
   }
@@ -593,15 +613,21 @@ body {
   text-transform: uppercase;
   margin-top: -10px;
 }
+@media screen and (min-width: 590px) {
+  .footer__data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
 @media screen and (min-width: 720px) {
   .footer__data {
     width: 80%;
-    display: flex;
     margin: 0 auto;
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 590px) {
   .footer__data::before {
     content: "";
     display: block;
@@ -643,7 +669,7 @@ body {
   margin: 0;
   margin-top: 65px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 590px) {
   .footer__logo {
     margin-top: 0;
   }
