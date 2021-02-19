@@ -33,6 +33,7 @@
     background-size: contain;
     top: 0;
     right: 0;
+    z-index: 1;
 
     @include mediaQuerie(1052px) {
       height: 235px;
@@ -65,6 +66,8 @@
     font-family: $Karla-bold;
     letter-spacing: 1px;
     font-size: 1.3rem;
+    position: relative;
+    z-index: 10;
 
     @include mediaQuerie(1052px) {
       margin-right: 60px;

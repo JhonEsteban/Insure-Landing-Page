@@ -28,7 +28,6 @@ html {
 
 img {
   display: block;
-  max-width: 100%;
 }
 
 ul {
@@ -189,7 +188,9 @@ body {
 }
 
 .security {
+  width: 100%;
   margin-bottom: 100px;
+  position: relative;
 }
 @media screen and (min-width: 540px) {
   .security {
@@ -198,12 +199,15 @@ body {
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1270px) {
   .security {
     width: 100%;
     background-color: #2d2640;
     flex-direction: row-reverse;
   }
+}
+.security__image {
+  max-width: 100%;
 }
 @media screen and (min-width: 540px) {
   .security__image {
@@ -211,12 +215,13 @@ body {
     position: relative;
     z-index: 20;
     top: -400px;
+    max-width: inherit;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1270px) {
   .security__image {
-    top: 70px;
-    left: -250px;
+    top: 145px;
+    left: -140px;
   }
 }
 .security__card {
@@ -232,12 +237,12 @@ body {
     height: 730px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1270px) {
   .security__card {
     width: 100%;
     height: initial;
     padding-left: 160px;
-    padding-top: 50px;
+    padding-top: 125px;
     text-align: initial;
   }
 }
@@ -248,13 +253,23 @@ body {
   font-size: 4.2rem;
   font-weight: 400;
   line-height: 40px;
+  position: relative;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1270px) {
   .security__card h1 {
     text-align: left;
-    font-size: 5rem;
+    font-size: 6rem;
     padding-left: 0;
     margin-left: -21px;
+    line-height: 60px;
+  }
+  .security__card h1::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: #fafafa;
+    top: 23px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -267,10 +282,10 @@ body {
   padding: 10px 16px;
   line-height: 25px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1270px) {
   .security__card p {
     text-align: left;
-    width: 65%;
+    width: 80%;
     padding-top: 30px;
     padding-left: 0;
     margin-left: -21px;
@@ -286,7 +301,7 @@ body {
   border: 1px solid #fafafa;
   font-family: KarlaRegular;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1270px) {
   .security__card .button {
     text-align: initial;
     margin-left: -21px;
@@ -479,6 +494,7 @@ body {
   background-size: contain;
   top: 0;
   right: 0;
+  z-index: 1;
 }
 @media screen and (min-width: 1052px) {
   .work::before {
@@ -517,6 +533,8 @@ body {
   font-family: KarlaBold, Arial, Helvetica;
   letter-spacing: 1px;
   font-size: 1.3rem;
+  position: relative;
+  z-index: 10;
 }
 @media screen and (min-width: 1052px) {
   .work .button {
@@ -602,16 +620,20 @@ body {
   font-size: 3rem;
   margin-bottom: 35px;
   position: relative;
+  z-index: 10;
 }
 .footer__networks li {
   margin-right: 15px;
 }
 .footer__networks li a {
   color: #837d87;
+  cursor: pointer;
 }
 .footer__data {
   text-transform: uppercase;
   margin-top: -10px;
+  position: relative;
+  z-index: 10;
 }
 @media screen and (min-width: 590px) {
   .footer__data {

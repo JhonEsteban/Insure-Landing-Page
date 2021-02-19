@@ -76,12 +76,14 @@
     font-size: 3rem;
     margin-bottom: 35px;
     position: relative;
+    z-index: 10;
 
     li {
       margin-right: 15px;
 
       a {
         color: $Dark-Grayish-Violet;
+        cursor: pointer;
       }
     }
   }
@@ -89,6 +91,8 @@
   &__data {
     text-transform: uppercase;
     margin-top: -10px;
+    position: relative;
+    z-index: 10;
 
     @include mediaQuerie(590px) {
       display: flex;

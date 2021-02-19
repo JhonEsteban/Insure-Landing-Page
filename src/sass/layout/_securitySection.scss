@@ -1,5 +1,7 @@
 .security {
+  width: 100%;
   margin-bottom: 100px;
+  position: relative;
 
   @include mediaQuerie(540px) {
     display: flex;
@@ -7,23 +9,26 @@
     margin-bottom: 0;
   }
 
-  @include mediaQuerie(1200px) {
+  @include mediaQuerie(1270px) {
     width: 100%;
     background-color: $Dark-Violet;
     flex-direction: row-reverse;
   }
 
   &__image {
+    max-width: 100%;
+
     @include mediaQuerie(540px) {
       margin: 0 auto;
       position: relative;
       z-index: 20;
       top: -400px;
+      max-width: inherit;
     }
 
-    @include mediaQuerie(1200px) {
-      top: 70px;
-      left: -250px;
+    @include mediaQuerie(1270px) {
+      top: 145px;
+      left: -140px;
     }
   }
 
@@ -39,11 +44,11 @@
       height: 730px;
     }
 
-    @include mediaQuerie(1200px) {
+    @include mediaQuerie(1270px) {
       width: 100%;
       height: initial;
       padding-left: 160px;
-      padding-top: 50px;
+      padding-top: 125px;
       text-align: initial;
     }
 
@@ -54,12 +59,23 @@
       font-size: 4.2rem;
       font-weight: 400;
       line-height: 40px;
+      position: relative;
 
-      @include mediaQuerie(1200px) {
+      @include mediaQuerie(1270px) {
         text-align: left;
-        font-size: 5rem;
+        font-size: 6rem;
         padding-left: 0;
         margin-left: -21px;
+        line-height: 60px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 200px;
+          height: 1px;
+          background-color: $Very-Light-Gray;
+          top: 23px;
+        }
       }
 
       span {
@@ -74,9 +90,9 @@
       padding: 10px 16px;
       line-height: 25px;
 
-      @include mediaQuerie(1200px) {
+      @include mediaQuerie(1270px) {
         text-align: left;
-        width: 65%;
+        width: 80%;
         padding-top: 30px;
         padding-left: 0;
         margin-left: -21px;
@@ -86,7 +102,7 @@
     .button {
       @include button;
 
-      @include mediaQuerie(1200px) {
+      @include mediaQuerie(1270px) {
         text-align: initial;
         margin-left: -21px;
       }
