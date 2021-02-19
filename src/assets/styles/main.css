@@ -512,6 +512,12 @@ body {
   margin-top: 140px;
   position: relative;
   overflow: hidden;
+  z-index: 10;
+}
+@media screen and (min-width: 720px) {
+  .footer {
+    padding: 20px 0;
+  }
 }
 .footer::before {
   content: "";
@@ -527,10 +533,26 @@ body {
   left: 0;
   right: 0;
 }
+@media screen and (min-width: 720px) {
+  .footer::before {
+    background-image: url(../../assets/images/bg-pattern-footer-desktop.svg);
+    z-index: 1;
+  }
+}
 .footer__social {
   text-align: center;
   position: relative;
   padding-bottom: 30px;
+}
+@media screen and (min-width: 720px) {
+  .footer__social {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 .footer__social::after {
   content: "";
@@ -543,6 +565,11 @@ body {
   left: 0;
   right: 0;
 }
+@media screen and (min-width: 720px) {
+  .footer__social::after {
+    display: none;
+  }
+}
 .footer__social h4 {
   font-size: 3.3rem;
   margin-bottom: 0;
@@ -554,6 +581,7 @@ body {
   align-items: center;
   font-size: 3rem;
   margin-bottom: 35px;
+  position: relative;
 }
 .footer__networks li {
   margin-right: 15px;
@@ -562,9 +590,29 @@ body {
   color: #837d87;
 }
 .footer__data {
-  display: grid;
   text-transform: uppercase;
   margin-top: -10px;
+}
+@media screen and (min-width: 720px) {
+  .footer__data {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 720px) {
+  .footer__data::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background-color: #ccc;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
 }
 .footer__data h5 {
   color: #837d87;
@@ -572,8 +620,18 @@ body {
 .footer__articles h5 {
   font-size: 1.4rem;
 }
+@media screen and (min-width: 720px) {
+  .footer__articles h5 {
+    text-align: left;
+  }
+}
 .footer__articles li {
   padding-bottom: 13px;
+}
+@media screen and (min-width: 720px) {
+  .footer__articles li {
+    text-align: left;
+  }
 }
 .footer__articles a {
   color: #2d2640;
@@ -584,6 +642,11 @@ body {
 .footer__logo {
   margin: 0;
   margin-top: 65px;
+}
+@media screen and (min-width: 720px) {
+  .footer__logo {
+    margin-top: 0;
+  }
 }
 .footer__image {
   margin: 0 auto;

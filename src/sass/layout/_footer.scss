@@ -6,6 +6,11 @@
   margin-top: 140px;
   position: relative;
   overflow: hidden;
+  z-index: 10;
+
+  @include mediaQuerie(720px) {
+    padding: 20px 0;
+  }
 
   &::before {
     content: '';
@@ -20,12 +25,26 @@
     top: 0;
     left: 0;
     right: 0;
+
+    @include mediaQuerie(720px) {
+      background-image: url(../../assets/images/bg-pattern-footer-desktop.svg);
+      z-index: 1;
+    }
   }
 
   &__social {
     text-align: center;
     position: relative;
     padding-bottom: 30px;
+
+    @include mediaQuerie(720px) {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+    }
 
     &::after {
       content: '';
@@ -37,6 +56,10 @@
       margin: auto;
       left: 0;
       right: 0;
+
+      @include mediaQuerie(720px) {
+        display: none;
+      }
     }
 
     h4 {
@@ -52,6 +75,7 @@
     align-items: center;
     font-size: 3rem;
     margin-bottom: 35px;
+    position: relative;
 
     li {
       margin-right: 15px;
@@ -63,9 +87,29 @@
   }
 
   &__data {
-    display: grid;
     text-transform: uppercase;
     margin-top: -10px;
+
+    @include mediaQuerie(720px) {
+      width: 80%;
+      display: flex;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+
+    &::before {
+      @include mediaQuerie(720px) {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 80%;
+        height: 1px;
+        background-color: #ccc;
+        margin: auto;
+        left: 0;
+        right: 0;
+      }
+    }
 
     h5 {
       color: $Dark-Grayish-Violet;
@@ -75,10 +119,18 @@
   &__articles {
     h5 {
       font-size: 1.4rem;
+
+      @include mediaQuerie(720px) {
+        text-align: left;
+      }
     }
 
     li {
       padding-bottom: 13px;
+
+      @include mediaQuerie(720px) {
+        text-align: left;
+      }
     }
 
     a {
@@ -92,6 +144,10 @@
   &__logo {
     margin: 0;
     margin-top: 65px;
+
+    @include mediaQuerie(720px) {
+      margin-top: 0;
+    }
   }
 
   &__image {
